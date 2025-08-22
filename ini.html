@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Repositorio Institucional</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   
+<style>
+
+/* Sección de estadísticas */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Colores pastel con fondo transparente y texto/iconos más oscuros */
+.stat-card:nth-child(1) {
+  background: rgba(160, 216, 241, 0.4); /* Celeste pastel transparente */
+  color: #1976d2; /* Celeste oscuro para texto/iconos */
+}
+
+.stat-card:nth-child(2) {
+  background: rgba(255, 224, 130, 0.4); /* Amarillo pastel transparente */
+  color: #f9a825; /* Amarillo oscuro para texto/iconos */
+}
+
+.stat-card:nth-child(3) {
+  background: rgba(174, 213, 129, 0.4); /* Verde pastel transparente */
+  color: #388e3c; /* Verde oscuro para texto/iconos */
+}
+
+.stat-card:nth-child(4) {
+  background: rgba(206, 147, 216, 0.4); /* Morado pastel transparente */
+  color: #6a1b9a; /* Morado oscuro para texto/iconos */
+}
+
+/* Opcional: mejorar contraste en títulos */
+.stat-card h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #4e73df, #1cc88a);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.stat-card i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.stat-card h3 {
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.stat-card p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.pagination{
+  display:flex; justify-content:center; align-items:center;
+  gap:8px; margin:16px 0 0; flex-wrap:wrap;
+}
+.page-btn{
+  appearance:none; border:1px solid #e5e7eb; background:#fff; color:#111;
+  padding:8px 12px; border-radius:10px; font-weight:700; cursor:pointer;
+}
+.page-btn:hover{ filter:brightness(.97); }
+.page-btn.active{ background: var(--brand-blue); color:#fff; border-color:transparent; }
+.page-btn[disabled]{ opacity:.5; cursor:not-allowed; }
+
+
+
+
+
+
+
+    :root{
+      --brand-red:white;/* Rojo solicitado */
+      --brand-blue:#00055A;/* Azul solicitado */
+      --blue-800:#0c1142;
+      --text:#111827;
+      --muted:#6B7280;
+      --bg:#f6f7fb;
+      --card:#ffffff;
+      --ring: 0 0 0 3px rgba(255,13,53,.25);
+      --radius: 18px;
+      --shadow: 0 10px 25px rgba(0,0,0,.07);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      color:var(--text); background:var(--bg);
+    }
+
+    /* Header / Navbar */
+    .nav{
+      position:sticky; top:0; z-index:50;
+      background:linear-gradient(90deg,var(--brand-blue),#030a6f);
+      color:#fff; box-shadow:var(--shadow);
+    }
+    .nav-inner{max-width:1200px;margin:auto;display:flex;align-items:center;gap:18px;padding:14px 20px}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+    .brand .logo{width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:#fff;color:var(--brand-blue);font-weight:900}
+    .nav a{color:#d4d7ff;text-decoration:none;font-weight:600}
+    .nav a:hover{color:#fff}
+    .nav-links{display:flex;gap:16px;margin-left:auto}
+
+    /* Hero */
+    /* Hero con imagen de fondo */
+.hero {
+  background: url('BIBLIO.mp4') center/cover no-repeat;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Contenedor del buscador */
+.hero-inner {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Buscador moderno */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+/* Input */
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  background: transparent;
+}
+
+/* Botón micrófono */
+.search-box .mic {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.search-box .mic:hover {
+  transform: scale(1.2);
+}
+
+
+
+/* Botón buscar */
+.search-box .btn-search {
+  background: #2563eb; /* azul vivo */
+  border: none;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.search-box .btn-search:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+
+.hero {
+  position: relative;
+  height: 300px; /* 🔹 ajusta el alto que quieras */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden; /* evita que se desborde el video */
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* hace que el video cubra toda la sección */
+  z-index: -1; /* lo manda al fondo */
+}
+
+
+    /* Search */
+    .search{
+      display:flex; gap:10px; align-items:center; background:#fff; padding:10px; border-radius:999px;
+      box-shadow:var(--shadow); border:1px solid rgba(0,5,90,.08);
+    }
+    .search input{flex:1;border:0;outline:none;font-size:16px;padding:8px 2px}
+    .search button{border:0;background:var(--brand-red);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;cursor:pointer}
+    .search button:hover{filter:brightness(.95)}
+    .mic{width:42px;height:42px;border-radius:999px;display:grid;place-items:center;cursor:pointer;border:1px solid rgba(0,5,90,.15);background:#f8f9ff}
+    .mic.active{box-shadow:var(--ring);border-color:var(--brand-red)}
+
+    /* Layout */
+    .container{max-width:1200px;margin:auto;padding:26px 20px}
+    .layout{display:grid;grid-template-columns:260px 1fr;gap:24px}
+    @media (max-width: 960px){.hero-inner{grid-template-columns:1fr}.layout{grid-template-columns:1fr}}
+
+    /* Sidebar */
+    .side{position:sticky;top:86px;align-self:start}
+    .filter-card{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);border:1px solid #eef0f8}
+    .filter-card h3{margin:0 0 12px;font-size:15px;color:var(--brand-blue)}
+    .chip{display:inline-flex;align-items:center;gap:8px;border:1px solid #e5e7f0;border-radius:999px;padding:6px 10px;margin:6px 6px 0 0;background:#fff}
+    .chip input{margin:0}
+
+    /* Cards */
+    .grid{display:grid;grid-template-columns:repeat(2, minmax(0,1fr));gap:18px}
+    @media (max-width: 760px){.grid{grid-template-columns:1fr}}
+
+    .card{background:var(--card);border-radius:var(--radius);display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px;border:1px solid #eef0f8;box-shadow:var(--shadow)}
+   
+.cover{
+  width:90%;
+  height:100px;
+  border-radius:12px;
+  background:#f1f3ff url('logo (1).jpg') center/cover no-repeat;
+  border:1px solid #e2e8ff;
+}
+   
+    .card h4{margin:2px 0 6px;font-size:16px}
+    .meta{font-size:12px;color:var(--muted)}
+    .desc{font-size:13px;color:#334155;line-height:1.35}
+    .pill{display:inline-block;font-size:11px;background:#00055A;color:var(--brand-red);border:1px dashed rgba(255,13,53,.35);padding:4px 8px;border-radius:999px;font-weight:700}
+    .more{margin-top:10px;display:flex;gap:10px}
+    .btn{appearance:none;border:0;border-radius:10px;padding:8px 12px;font-weight:700;cursor:pointer}
+    .btn-primary{background:var(--brand-blue);color:#fff}
+    .btn-outline{background:#fff;border:1px solid #e4e7f2}
+    .btn-link{background:transparent;border:0;color:var(--brand-blue);font-weight:700;cursor:pointer}
+
+    /* Detail view */
+    .detail{display:grid;grid-template-columns:260px 1fr;gap:22px}
+    @media (max-width:920px){.detail{grid-template-columns:1fr}}
+    .panel{background:var(--card);border-radius:var(--radius);padding:18px;border:1px solid #eef0f8;box-shadow:var(--shadow)}
+    .panel h3{margin-top:0;color:var(--brand-blue)}
+    .kv{display:grid;grid-template-columns:160px 1fr;gap:6px 12px;font-size:14px}
+    .kv div{padding:6px 0;border-bottom:1px dashed #eef0f8}
+
+    /* Modal */
+    dialog{border:none;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.2);width:min(1100px,92vw)}
+    dialog::backdrop{background:rgba(0,0,0,.55)}
+    .modal-header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;border-bottom:1px solid #eef0f8}
+    .modal-actions{display:flex;gap:10px}
+    .modal-body{padding:0;height:75vh}
+    .modal-body iframe{width:100%;height:100%;border:0;border-bottom-left-radius:18px;border-bottom-right-radius:18px}
+
+    /* Footer */
+    .footer{
+      background:linear-gradient(180deg,var(--brand-blue),#010433);
+      color:#ccd2ff; margin-top:40px; padding:36px 20px 20px; border-top:4px solid var(--brand-red);
+    }
+    .footer a{color:#fff;text-decoration:none}
+    .footer-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:18px}
+    @media (max-width: 900px){.footer-grid{grid-template-columns:1fr 1fr}}
+    .footer h4{margin:0 0 12px;color:#fff}
+    .copyright{max-width:1200px;margin:12px auto 0;color:#aab0ff;font-size:12px}
+
+    /* Tiny helpers */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+    .sep{height:1px;background:#eef0f8;margin:16px 0}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  </style>
+</head>
+<body>
+  <header class="nav" role="banner">
+  <div class="nav-inner">
+    <div class="brand" aria-label="Marca del repositorio">
+      <img src="Logo IPA - Blanco.png" alt="Logo Institución" width="115" height="60">
+      <div>
+        <div>Repositorio Institucional</div>
+        <small style="opacity:.8;font-weight:600">Amauta</small>
+      </div>
+    </div>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#/" onclick="Router.go('/')">Inicio</a>
+      <a href="https://www.digitaliapublishing.com/" target="_blank" onclick="Router.go('/colecciones')">Biblioteca</a>
+      <a href="#/" onclick="Router.go('/estadisticas')">Estadísticas</a>
+      <a href="https://wa.me/51974329311" target="_blank"  onclick="Router.go('/contacto')">Contáctenos</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+.nav {
+  border-bottom: 2px solid white; /* línea blanca debajo del header */
+}
+</style>
+
+
+ <section class="hero">
+  <!-- Video de fondo -->
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="BIBLIO.mp4" type="video/mp4">
+    Tu navegador no soporta videos en HTML5.
+  </video>
+
+  <div class="hero-inner">
+    <form class="search-box" role="search" aria-label="Buscador del repositorio" onsubmit="App.onSearch(event)">
+      <label class="sr-only" for="q">Buscar</label>
+      <input id="q" name="q" type="search" placeholder="🔍 Buscar en el repositorio..." autocomplete="off" />
+      <button type="button" class="mic" id="micBtn" title="Dictar con voz" aria-pressed="false" onclick="Voice.toggle()">🎤</button>
+      <button type="submit" class="btn-search">Buscar</button>
+    </form>
+  </div>
+</section>
+
+
+
+  <main id="app" class="container" aria-live="polite"></main>
+
+  <!-- Modal PDF -->
+  <dialog id="pdfModal" aria-label="Visor de PDF">
+    <div class="modal-header">
+      <strong id="pdfTitle">Visor de PDF</strong>
+      <div class="modal-actions">
+        <button class="btn btn-outline" id="openNewTab">Abrir en nueva pestaña</button>
+        <button class="btn btn-outline" id="downloadPdf">Descargar</button>
+        <button class="btn btn-primary" onclick="document.getElementById('pdfModal').close()">Cerrar</button>
+      </div>
+    </div>
+    <div class="modal-body" id="pdfContainer">
+      <!-- iframe se inyecta desde JS -->
+    </div>
+  </dialog>
+
+
+  <script>
+    /********************** Datos de ejemplo ************************/
+
+    const DATA = [
+
+{
+        id: 'tesis-001',
+        title: 'Los cuentos infantiles y el desarrollo de la creatividad en niños(as) de cinco años de la IEIP Alfred Binet, Ugel 02, 2024',
+        authors: ['Torres Aquino, Gina Digna'],
+        advisor: 'Baltazar Cotrina, Carmen',
+        editors: 'Instituto de Educación Superior Pedagógico Privado AMAUTA',
+        date: '2024',
+        program: 'Educación Inicial',
+        tags: ['Educación inicial','Cuentos infantiles','Creatividad','Aprendizaje'],
+        abstract: 'La investigación concluye que existe una correlación positiva y significativa entre los cuentos infantiles y el desarrollo de la creatividad en niños de 5 años de la IEIP Alfred Binet.',
+        cover: null, // usa placeholder SVG
+        pdf: "https://drive.google.com/file/d/1i2zrWcAMEtU8zMu5D4TIsOlp4LQn89iQ/view?usp=sharing/preview" // coloque aquí una URL o DataURI del PDF si la tiene
+      },
+      {
+        id: 'tesis-002',
+        title: 'Pensamiento lógico en el área de matemática en niños de 5 años de la Institución Educativa Privada “El Nazareno” del distrito de Puente Piedra, 2024',
+        authors: ['Egusquiza Via, Gaby Mary; Lavi Paima, Karina Genoveva'],
+        advisor: 'Baltazar Cotrina, Carmen',
+        editors: 'Instituto de Educación Superior Pedagógico Privado AMAUTA',
+        date: '2024',
+        program: 'Educación Inicial',
+        tags: ['Educación inicial','Pensamiento lógico','Habilidades mentales','Desarrollo cognitivo'],
+        abstract: 'La investigación resalta la importancia de fomentar el pensamiento lógico en el área de matemática para potenciar el desarrollo cognitivo y académico de niños de 5 años.',
+        cover: null,
+        pdf: "https://drive.google.com/file/d/1hXJ7QUWtj-XgdITw6OOEefceVgP3vkTp/view?usp=sharing/preview"
+      },
+      {
+        id: 'tesis-003',
+        title: 'El juego como estrategia didáctica en el desarrollo de habilidades matemáticas en niños de 3 años de la I.E.P San Juan Bosco – Lima',
+        authors: ['Ascencio Calagua, Estefany Angeli; Herbas Gutierrez, Veronica Miluska'],
+        advisor: 'Baltazar Cotrina, Carmen',
+        editors: 'Instituto de Educación Superior Pedagógico Privado AMAUTA',
+        date: '2024',
+        program: 'Educación Inicial',
+        tags: ['Educación inicial','Juego','Estrategia','Didáctica','Área de matemática'],
+        abstract: 'La investigación concluye que el juego es una estrategia didáctica esencial para desarrollar habilidades matemáticas en niños de 3 años.',
+        cover: null,
+        pdf: "https://drive.google.com/file/d/1G_teSIm7fRqlG8EhbFMDJ-1YNRd1-Fpu/view?usp=sharing/preview"
+      },
+      {
+        id: 'tesis-004',
+        title: 'La inteligencia emocional y la resolución de conflictos en estudiantes de sexto grado de primaria de I. E. 1194 “Ferrocarril”, Chosica',
+        authors: ['Alvarado Salazar, Ronald Wilfredo'],
+        advisor: 'Baltazar Cotrina, Carmen',
+        editors: 'Instituto de Educación Superior Pedagógico Privado AMAUTA',
+        date: '2024',
+        program: 'Educación Primaria',
+        tags: ['Educación primaria','Inteligencia emocional','Resolución de conflictos','Emociones','Estudiantes'],
+        abstract: 'La investigación muestra que la inteligencia emocional contribuye a la resolución de conflictos en estudiantes de sexto grado, aunque deben fortalecer la adaptabilidad y el manejo del estrés.',
+        cover: null,
+        pdf: "https://drive.google.com/file/d/1P1Ouy0og5422fc5OlLcua5S1KWYyC6k2/view?usp=sharing/preview"
+      },
+      {
+        id: 'tesis-005',
+        title: 'El juego y el aprendizaje por descubrimiento en niños de 4 años de la I.E. Nido Los Rosales - San Miguel',
+        authors: ['Legua Romero, Nathaly Elizabeth; Peña Carnero, Nery Del Rosario'],
+        advisor: 'Baltazar Cotrina, Carmen',
+        editors: 'Instituto de Educación Superior Pedagógico Privado AMAUTA',
+        date: '2024',
+        program: 'Educación Inicial',
+        tags: ['Educación inicial','Juego','Estrategia','Desarrollo integral','Aprendizaje por descubrimiento'],
+        abstract: 'La investigación concluye que el juego es una estrategia eficaz para promover el aprendizaje por descubrimiento y el desarrollo integral en niños de 4 años.',
+        cover: null,
+        pdf: "https://drive.google.com/file/d/1F6cGty8NzNEVoOtGOtqPmGbnAuXjfzUo/view?usp=sharing/preview"
+      },
+      {
+        id: 'tesis-006',
+        title: 'El cuento y su relación con el Pensamiento Crítico en los estudiantes del sexto grado “A” de Educación Primaria de la I.E. N°046 “Los Libertadores de Ayacucho”-El Agustino-Lima-2024',
+        authors: ['Jacho Medina, Angie Yosselin'],
+        advisor: 'Baltazar Cotrina, Carmen',
+        editors: 'Instituto de Educación Superior Pedagógico Privado AMAUTA',
+        date: '2024',
+        program: 'Educación Primaria',
+        tags: ['Educación primaria','Cuento','Pensamiento crítico'],
+        abstract: 'La investigación confirma una correlación significativa entre la lectura de cuentos y el desarrollo del pensamiento crítico en estudiantes de sexto grado.',
+        cover: null,
+        pdf: "https://drive.google.com/file/d/1X6MM6bZcpQnS7ASyYdirEX2IxS4ybtnU/view?usp=sharing/preview"
+      },
+
+
+
+      {
+        id: 'tesis-007',
+        title: 'Los cuentos infantiles y el desarrollo de la creatividad en niños(as) de cinco años de la IEIP Alfred Binet, Ugel 02, 2024',
+        authors: ['Torres Aquino, Gina Digna'],
+        advisor: 'Baltazar Cotrina, Carmen',
+        editors: 'Instituto de Educación Superior Pedagógico Privado AMAUTA',
+        date: '2024',
+        program: 'Educación Inicial ',
+        tags: ['Educación Inicial','Cuentos infantiles','Creatividad','Aprendizaje'],
+        abstract: ' La investigación determinó una correlación positiva y significativa (r = 0,761; p = 0,001) entre los cuentos infantiles y el desarrollo de la creatividad en niños de 5 años.',
+        cover: "logo", // usa placeholder SVG
+        pdf: "https://drive.google.com/file/d/1X6MM6bZcpQnS7ASyYdirEX2IxS4ybtnU/preview" // coloque aquí una URL o DataURI del PDF si la tiene
+      },
+      {
+        id: 'tesis-008',
+        title: 'Aplicación del ciclo PHVA para aumentar la productividad en una empresa fabricante de tableros metálicos, Lima, 2023',
+        authors: ['Flores Villanueva, Carlos Emerson'],
+        advisor: '—',
+        editors: 'USIL',
+        date: '2023',
+        program: 'Ingeniería Industrial y Comercial',
+        tags: ['Mejora continua','PHVA','Productividad'],
+        abstract: 'Trabajo de enfoque descriptivo correlacional aplicando PHVA para optimización de procesos en planta metalmecánica.',
+        cover: null,
+        pdf: "https://drive.google.com/file/d/14GOAPqbrlC8rEdmHUQHQobxUQxU-C0gL/preview"
+      },
+   
+    ];
+
+
+
+
+
+
+
+
+
+
+
+// Paginación
+let currentPage = 1;
+const tesisPerPage = 6; // 6 ítems = 3 filas si tu grid tiene 2 columnas en desktop
+    
+    /********************** Ruteo mínimo ************************/
+    const Router = {
+      routes: {},
+      init(){
+        window.addEventListener('hashchange', this.handle.bind(this));
+        this.handle();
+      },
+      handle(){
+        const path = location.hash.replace('#','') || '/';
+        const [base, id] = path.split('/').filter(Boolean);
+        if(!base){ App.renderHome(); return; }
+        if(base==='item' && id){ App.renderItem(id); return; }
+        App.renderNotFound();
+      },
+      go(path){ location.hash = '#' + path; }
+    };
+
+    /********************** Render de vistas ************************/
+    const App = {
+      q: '',
+     onSearch(e){
+  e.preventDefault();
+  const value = document.getElementById('q').value.trim();
+  currentPage = 1;                 // 👈 reinicia a la página 1 al buscar
+  App.q = value; 
+  App.renderHome();
+},
+      filtered(){
+        if(!this.q) return DATA;
+        const q = this.q.toLowerCase();
+        return DATA.filter(d =>
+          d.title.toLowerCase().includes(q) ||
+          d.authors.join(' ').toLowerCase().includes(q) ||
+          (d.tags||[]).join(' ').toLowerCase().includes(q)
+        );
+      },
+      
+      
+      renderHome(){
+  document.getElementById('q').value = this.q || '';
+  const items = this.filtered();
+  const count = items.length;
+
+  // Calcula páginas
+  const totalPages = Math.ceil(count / tesisPerPage) || 1;
+  if (currentPage > totalPages) currentPage = 1; // seguridad si cambió el filtro
+  const start = (currentPage - 1) * tesisPerPage;
+  const end = start + tesisPerPage;
+  const pageItems = items.slice(start, end);
+
+  const side = `
+    <aside class="side">
+      <div class="filter-card">
+        <h3>Filtros rápidos</h3>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Inicial', this.checked)"> Educación Inicial</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Primaria', this.checked)"> Educación Primaria</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación CC.SS', this.checked)"> Educación CC.SS</label>
+      </div>
+    </aside>`;
+
+  // Tarjetas sólo de la página actual
+  const grid = pageItems.map(d => ItemCard(d)).join('');
+
+  // Paginación numérica
+  let pagination = '';
+  if (totalPages > 1) {
+    pagination = `<div class="pagination">
+        <button class="page-btn" ${currentPage===1?'disabled':''}
+                onclick="App.goPage(${currentPage-1})">«</button>
+        ${Array.from({length: totalPages}, (_,i)=> i+1).map(i => `
+          <button class="page-btn ${i===currentPage?'active':''}"
+                  onclick="App.goPage(${i})">${i}</button>
+        `).join('')}
+        <button class="page-btn" ${currentPage===totalPages?'disabled':''}
+                onclick="App.goPage(${currentPage+1})">»</button>
+      </div>`;
+  }
+
+  const html = `
+    <div class="layout">
+      ${side}
+      <section>
+        <h2 style="margin:0 0 10px">Envíos recientes 
+          <small style="color:var(--muted);font-weight:500">(${count})</small>
+        </h2>
+        <div class="grid">${grid || EmptyState()}</div>
+        ${pagination}
+      </section>
+    </div>`;
+
+  document.getElementById('app').innerHTML = html;
+},
+goPage(i){
+  const items = this.filtered();
+  const totalPages = Math.ceil(items.length / tesisPerPage) || 1;
+  if (i < 1 || i > totalPages) return;
+  currentPage = i;
+  this.renderHome();
+},
+
+      toggleTag(tag, checked){
+  const q = new Set((this.q||'').split(' ').filter(Boolean));
+  if(checked) q.add(tag); else q.delete(tag);
+  this.q = Array.from(q).join(' ');
+  document.getElementById('q').value = this.q;
+  currentPage = 1;                 // 👈 reinicia a la página 1 al filtrar
+  this.renderHome();
+},
+      renderItem(id){
+        const item = DATA.find(x=>x.id===id);
+        if(!item) return this.renderNotFound();
+        const left = `
+          <div class="panel">
+            <div class="cover" role="img" aria-label="Portada de la tesis" style="height:320px"></div>
+            <div class="sep"></div>
+           <center> <button class="btn btn-primary" onclick="PDF.open('${item.id}')">Ver PDF</button> </center>
+          </div>`;
+        const right = `
+          <div class="panel">
+            <h3>${item.title}</h3>
+            <div class="meta">${item.program} — ${item.date}</div>
+            <div class="sep"></div>
+            <div class="kv">
+              <div><strong>Autores</strong></div><div>${item.authors.join('; ')}</div>
+              <div><strong>Asesor</strong></div><div>${item.advisor||'—'}</div>
+              <div><strong>Editores</strong></div><div>${item.editors||'—'}</div>
+              <div><strong>Fecha</strong></div><div>${item.date}</div>
+              <div><strong>Temas</strong></div><div>${(item.tags||[]).join(', ')}</div>
+            </div>
+            <div class="sep"></div>
+            <details open>
+              <summary style="font-weight:800;color:var(--brand-blue);cursor:pointer">Resumen</summary>
+              <p style="margin-top:8px">${item.abstract}</p>
+
+            </details>
+          </div>`;
+        document.getElementById('app').innerHTML = `<button class="btn btn-link" onclick="Router.go('/')">← Volver</button><div class="detail">${left}${right}</div>`;
+      },
+      renderNotFound(){
+        document.getElementById('app').innerHTML = `<div class="panel"><h3>Ruta no encontrada</h3><p>La página solicitada no existe. <a href="#/" onclick="Router.go('/')">Volver al inicio</a>.</p></div>`
+      }
+    };
+
+    function ItemCard(d){
+      return `
+        <article class="card" aria-label="Tesis ${d.title}">
+          <a href="#/item/${d.id}" onclick="Router.go('/item/${d.id}')" aria-label="Abrir detalle">
+            <div class="cover"></div>
+          </a>
+          <div>
+            <h4><a class="btn-link" href="#/item/${d.id}" onclick="Router.go('/item/${d.id}')">${d.title}</a></h4>
+            <div class="meta">${d.authors.join('; ')} • ${d.program} • ${d.date}</div>
+            <p class="desc">${d.abstract}</p>
+            <div class="more">
+              <span class="pill">Acceso abierto</span>
+              <button class="btn btn-outline" onclick="Router.go('/item/${d.id}')">Más detalles</button>
+            </div>
+          </div>
+        </article>`;
+    }
+
+    function EmptyState(){
+      return `<div class="panel" style="grid-column:1/-1;text-align:center">
+        <h3>No se encontraron resultados</h3>
+        <p>Intenta con otros términos, por ejemplo: <em>productividad</em>, <em>PHVA</em> o un autor.</p>
+      </div>`
+    }
+
+    /********************** Buscador por voz ************************/
+    const Voice = {
+      rec: null,
+      active: false,
+      ensure(){
+        const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if(!SR) { alert('Tu navegador no soporta reconocimiento de voz. Prueba Chrome/Edge en escritorio o Android.'); return null; }
+        if(!this.rec){
+          this.rec = new SR();
+          this.rec.lang = 'es-PE';
+          this.rec.interimResults = true;
+          this.rec.maxAlternatives = 1;
+          this.rec.onresult = (e)=>{
+            const t = Array.from(e.results).map(r=>r[0].transcript).join(' ');
+            document.getElementById('q').value = t;
+          };
+          this.rec.onend = ()=>{ this.active=false; micBtn.classList.remove('active'); document.getElementById('q').focus(); };
+          this.rec.onerror = ()=>{ this.active=false; micBtn.classList.remove('active'); };
+        }
+        return this.rec;
+      },
+      toggle(){
+        const r = this.ensure(); if(!r) return;
+        if(this.active){ r.stop(); this.active=false; micBtn.classList.remove('active'); return; }
+        try{ r.start(); this.active = true; micBtn.classList.add('active'); }catch(err){ /* noop */ }
+      }
+    };
+
+    /********************** Visor de PDF ************************/
+    const PDF = {
+      currentUrl: null,
+      open(id){
+        const item = DATA.find(x=>x.id===id);
+        const modal = document.getElementById('pdfModal');
+        const title = document.getElementById('pdfTitle');
+        const container = document.getElementById('pdfContainer');
+        title.textContent = `PDF – ${item.title}`;
+
+        // Si el item no tiene PDF, permitimos cargar uno local para la demo
+        if(!item.pdf){
+          container.innerHTML = `<div style="padding:24px">
+            <p><strong>Este ítem no tiene un PDF asignado en el demo.</strong></p>
+            <p>Puedes elegir un archivo PDF para previsualizarlo aquí mismo.</p>
+            <input type="file" accept="application/pdf" id="pdfFileInput" />
+          </div>`;
+          document.getElementById('pdfFileInput').addEventListener('change', (ev)=>{
+            const file = ev.target.files[0]; if(!file) return;
+            const url = URL.createObjectURL(file);
+            PDF.render(url);
+          });
+          this.currentUrl = null;
+        } else {
+          this.render(item.pdf);
+        }
+
+        modal.showModal();
+      },
+      render(url){
+        const container = document.getElementById('pdfContainer');
+        container.innerHTML = `<iframe src="${url}" title="Visor PDF"></iframe>`;
+        this.currentUrl = url;
+      }
+    };
+
+    // Acciones de modal (descargar / abrir)
+    document.getElementById('openNewTab').addEventListener('click',()=>{
+      if(!PDF.currentUrl){ alert('Primero selecciona un PDF.'); return; }
+      window.open(PDF.currentUrl, '_blank');
+    });
+    document.getElementById('downloadPdf').addEventListener('click',()=>{
+      if(!PDF.currentUrl){ alert('Primero selecciona un PDF.'); return; }
+      const a = document.createElement('a'); a.href = PDF.currentUrl; a.download = 'tesis.pdf'; a.click();
+    });
+
+    // Inicializa
+    Router.init();
+    
+  </script>
+
+<section class="stats">
+  <div class="stat-card publicaciones">
+    <i class="fas fa-book"></i>
+    <h3>6+</h3>
+    <p>Publicaciones</p>
+  </div>
+  <div class="stat-card asesores">
+    <i class="fas fa-user-tie"></i>
+    <h3>4+</h3>
+    <p>Asesores</p>
+  </div>
+  <div class="stat-card tesistas">
+    <i class="fas fa-users"></i>
+    <h3>20+</h3>
+    <p>Tesistas</p>
+  </div>
+  <div class="stat-card proyectos">
+    <i class="fas fa-lightbulb"></i>
+    <h3>10+</h3>
+    <p>Proyectos Integradores</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Carrusel de iconos -->
+<div class="carousel-container">
+  <button class="carousel-btn prev">&#10094;</button>
+  <div class="carousel-track-container">
+    <ul class="carousel-track">
+
+  <li class="carousel-item">
+  <a href="https://repositorio.concytec.gob.pe/home" target="_blank" rel="noopener noreferrer">
+    <img src="concytec.png" alt="icono1" 
+         style="width:150px; height:auto; object-fit:contain; border-radius:12px;">
+  </a>
+</li>
+<li class="carousel-item">
+  <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer">
+    <img src="google.png" alt="icono1" 
+         style="width:150px; height:auto; object-fit:contain; border-radius:12px;">
+  </a>
+</li>
+<li class="carousel-item">
+  <a href="https://opendoar.ac.uk/" target="_blank" rel="noopener noreferrer">
+    <img src="OpenDoar.png" alt="icono1" 
+         style="width:150px; height:auto; object-fit:contain; border-radius:12px;">
+  </a>
+</li>
+</li>
+<li class="carousel-item">
+  <a href="https://scielo.org/es/" target="_blank" rel="noopener noreferrer">
+    <img src="scielo-data.jpg" alt="icono1" 
+         style="width:150px; height:auto; object-fit:contain; border-radius:12px;">
+  </a>
+</li>
+</li>
+<li class="carousel-item">
+  <a href="https://alicia.concytec.gob.pe/vufind/Search/Results?lookfor=ingenieria&fieldstosearch=AllFields" target="_blank" rel="noopener noreferrer">
+    <img src="alicia.jpg" alt="icono1" 
+         style="width:150px; height:auto; object-fit:contain; border-radius:12px;">
+  </a>
+</li>
+<li class="carousel-item">
+  <a href="https://www.redalyc.org/" target="_blank" rel="noopener noreferrer">
+    <img src="redalyc.jpg" alt="icono1" 
+         style="width:150px; height:auto; object-fit:contain; border-radius:12px;">
+  </a>
+</li>
+<li class="carousel-item">
+  <a href="https://scielo.org/es/" target="_blank" rel="noopener noreferrer">
+    <img src="scielo-data.jpg" alt="icono1" 
+         style="width:150px; height:auto; object-fit:contain; border-radius:12px;">
+  </a>
+</li>
+<li class="carousel-item">
+  <a href="https://biblioteca.concytec.gob.pe/" target="_blank" rel="noopener noreferrer">
+    <img src="bibilioconcytec.png" alt="icono1" 
+         style="width:150px; height:auto; object-fit:contain; border-radius:12px;">
+  </a>
+</li>
+    </ul>
+  </div>
+  <button class="carousel-btn next">&#10095;</button>
+</div>
+
+<style>
+.carousel-container {
+  position: relative;
+  max-width: 900px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 25%; /* 4 elementos visibles */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.carousel-item img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(1.1);
+}
+
+.carousel-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  position: absolute;
+  left: -50px;
+}
+
+.next {
+  position: absolute;
+  right: -50px;
+}
+</style>
+
+<script>
+const track = document.querySelector(".carousel-track");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const items = document.querySelectorAll(".carousel-item");
+
+let index = 0;
+const itemsPerView = 4;
+const totalItems = items.length;
+
+function updateCarousel() {
+  const slideWidth = items[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+nextBtn.addEventListener("click", () => {
+  if (index < totalItems - itemsPerView) {
+    index++;
+    updateCarousel();
+  }
+});
+
+prevBtn.addEventListener("click", () => {
+  if (index > 0) {
+    index--;
+    updateCarousel();
+  }
+});
+</script>
+
+
+
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <h4>Nosotros</h4>
+      <p style="margin:0 0 8px">Líderes en Innovación Educativa</p>
+      <a href="https://amauta.q10.com/SolicitudesInstitucionales/NuevaSolicitud" target="_blank">Libro de Reclamaciones</a>
+    </div>
+    <div>
+      <h4>Servicios</h4>
+      <ul style="margin:0;padding-left:18px">
+        <li>Biblioteca Institucional</li>
+        <li>Atención y seguimiento al Alumno</li>
+        <li>Plataformas Institucionales</li>
+        <li>Aplicativo Movil</li>
+        <li>Bolsa Laboral</li>
+        <li>Portal Informativo</li>
+        <li>Créditos y Cobranza</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Programas</h4>
+      <ul style="margin:0;padding-left:18px">
+        <li>Educación Inicial</li>
+        <li>Educación Primaria</li>
+        <li>Educación Secundaria en especialidad Ciencias Sociales</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <p style="margin:0 0 8px">Av. 9 de diciembre 321, Cercado de Lima</p> <br>
+      <p style="margin:0">Celular: 974 329 311</p>
+    </div>
+  </div>
+
+  <div class="copyright">© 2025 Repositorio Institucional IPA - AMAUTA.</div>
+
+  <!-- Rayas verticales -->
+  <div class="v-line" style="left:5%;"></div>
+  <div class="v-line" style="left:15%;"></div>
+  <div class="v-line" style="left:25%;"></div>
+  <div class="v-line" style="left:35%;"></div>
+  <div class="v-line" style="left:50%;"></div>
+  <div class="v-line" style="left:65%;"></div>
+  <div class="v-line" style="left:80%;"></div>
+</footer>
+
+<style>
+.footer {
+  position: relative;
+  color: #fff;
+  background: #00055A;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 20px;
+  z-index: 2;
+  position: relative;
+}
+
+.footer h4, .footer a, .copyright {
+  position: relative;
+  z-index: 2; /* contenido encima del fondo */
+}
+
+/* Rayas verticales */
+.v-line {
+  position: absolute;
+  top: -150px; /* iniciar fuera del footer */
+  width: 2px;
+  height: 150px;
+  background: rgba(0, 212, 255, 0.5);
+  border-radius: 1px;
+  animation: dropLine 6s linear infinite; /* velocidad intermedia */
+}
+
+/* Animación de caída vertical */
+@keyframes dropLine {
+  0% { top: -150px; opacity: 0; }
+  50% { opacity: 0.6; }
+  100% { top: 100%; opacity: 0; }
+}
+</style>
+
+
+
+
+</body>
+</html>
