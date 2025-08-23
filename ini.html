@@ -176,7 +176,7 @@
   background: rgba(255, 255, 255, 0.95);
   border-radius: 50px;
   padding: 10px 15px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 20px black;
 }
 
 /* Input */
@@ -194,7 +194,7 @@
 .search-box .mic {
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 27px;
   margin-right: 10px;
   cursor: pointer;
   transition: transform 0.2s;
@@ -207,7 +207,7 @@
 
 /* Botón buscar */
 .search-box .btn-search {
-  background: #2563eb; /* azul vivo */
+  background: #00055A; /* azul institucional */
   border: none;
   color: #fff;
   padding: 10px 25px;
@@ -332,8 +332,6 @@
 
 
 
-
-
     
   </style>
 </head>
@@ -350,7 +348,7 @@
     <nav class="nav-links" aria-label="Principal">
       <a href="" onclick="Router.go('/')">Inicio</a>
       <a href="https://www.digitaliapublishing.com/" target="_blank" onclick="Router.go('/colecciones')">Biblioteca</a>
-      <a href="#/" onclick="Router.go('/estadisticas')">Estadísticas</a>
+      <a href="" onclick="Router.go('/estadisticas')">Estadísticas</a>
       <a href="https://wa.me/51974329311" target="_blank"  onclick="Router.go('/contacto')">Contáctenos</a>
     </nav>
   </div>
@@ -622,13 +620,13 @@ const tesisPerPage = 6; // 6 ítems = 3 filas si tu grid tiene 2 columnas en des
         <h3>Especialidad</h3>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Inicial', this.checked)"> Educación Inicial</label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Primaria', this.checked)"> Educación Primaria</label>
-        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación CC.SS', this.checked)"> Educación CC.SS</label><br>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación CC.SS', this.checked)"> Educación CC.SS</label><br><br>
         
         <h3>Año</h3>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('2022', this.checked)"> 2022</label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('2023', this.checked)"> 2023 </label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('2024', this.checked)"> 2024 </label>
-        <label class="chip"><input type="checkbox" onchange="App.toggleTag('2025', this.checked)"> 2025 </label><br>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('2025', this.checked)"> 2025 </label><br><br>
         
         <h3>Palabras Clave</h3>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Creatividad', this.checked)"> Creatividad</label>
@@ -1111,6 +1109,7 @@ prevBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
