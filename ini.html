@@ -483,24 +483,35 @@
         cover: null,
         pdf: "https://drive.google.com/file/d/1X6MM6bZcpQnS7ASyYdirEX2IxS4ybtnU/view?usp=sharing/preview"
       },
-
-
-
       {
         id: 'tesis-007',
-        title: 'Los cuentos infantiles y el desarrollo de la creatividad en niños(as) de cinco años de la IEIP Alfred Binet, Ugel 02, 2024',
-        authors: ['Torres Aquino, Gina Digna'],
+        title: 'Estilos de crianza y lenguaje oral en niños de 3 años del IEP Santa Monica College, Los Olivos',
+        authors: ['Hidalgo Delgadillo, Ana Maria; Lopez Vasquez, America Modesta; Moreno De Nuñez, Celia Maria; Bonilla Montalvo, Liliana Patricia; Avendaño Andia, Maria Elena'],
         advisor: 'Baltazar Cotrina, Carmen',
         editors: 'Instituto de Educación Superior Pedagógico Privado AMAUTA',
         date: '2024',
-        program: 'Educación Inicial ',
-        tags: ['Educación Inicial','Cuentos infantiles','Creatividad','Aprendizaje'],
-        abstract: ' La investigación determinó una correlación positiva y significativa (r = 0,761; p = 0,001) entre los cuentos infantiles y el desarrollo de la creatividad en niños de 5 años.',
-        cover: "logo", // usa placeholder SVG
-        pdf: "https://drive.google.com/file/d/1X6MM6bZcpQnS7ASyYdirEX2IxS4ybtnU/preview" // coloque aquí una URL o DataURI del PDF si la tiene
+        program: 'Educación Inicial',
+        tags: ['Educación inicial','Estilos de crianza','Lenguaje','Niños','Desarrollo verbal'],
+        abstract: 'La investigación concluye que los estilos de crianza influyen significativamente en el desarrollo del lenguaje oral en niños de 3 años.',
+        cover: null,
+        pdf: "https://drive.google.com/file/d/1LtqVJ0wfYQwArRO2R54iALDfVTWb1mrD/view?usp=sharing/preview"
       },
       {
         id: 'tesis-008',
+        title: 'Estimulación musical como estrategia didáctica para el aprendizaje significativo de los niños de 4 años del nivel inicial de la institución educativa nacional 06 republica de Holanda del Cercado de Lima, 2024',
+        authors: ['Chávez Mendoza, María'],
+        advisor: 'Baltazar Cotrina, Carmen',
+        editors: 'Instituto de Educación Superior Pedagógico Privado AMAUTA',
+        date: '2024',
+        program: 'Educación Inicial',
+        tags: ['Educación inicial','Estimulación musical','Aprendizaje significativo','Habilidades','Motivación'],
+        abstract: 'La investigación concluye que la estimulación musical es una estrategia didáctica significativa para favorecer el aprendizaje en niños de 4 años.',
+        cover: null,
+        pdf: "https://drive.google.com/file/d/14ZqwMtHxgjUsZ3e4b8jho0CYC3AFVCri/view?usp=sharing/preview"
+      },
+
+      {
+        id: 'tesis-001-PRUEBA',
         title: 'Aplicación del ciclo PHVA para aumentar la productividad en una empresa fabricante de tableros metálicos, Lima, 2023',
         authors: ['Flores Villanueva, Carlos Emerson'],
         advisor: '—',
@@ -586,6 +597,19 @@ const tesisPerPage = 6; // 6 ítems = 3 filas si tu grid tiene 2 columnas en des
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Inicial', this.checked)"> Educación Inicial</label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Primaria', this.checked)"> Educación Primaria</label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación CC.SS', this.checked)"> Educación CC.SS</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Creatividad', this.checked)"> Creatividad</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Desarrollo cognitivo', this.checked)"> Desarrollo cognitivo</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Didáctica', this.checked)"> Didáctica</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Inteligencia emocional', this.checked)"> Inteligencia emocional</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Inteligencia emocional', this.checked)"> Inteligencia emocional</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Inteligencia emocional', this.checked)"> Inteligencia emocional</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Inteligencia emocional', this.checked)"> Inteligencia emocional</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Inteligencia emocional', this.checked)"> Inteligencia emocional</label>
+        <h3>Filtros rápidos</h3>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Inicial', this.checked)"> Educación Inicial</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Primaria', this.checked)"> Educación Primaria</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación CC.SS', this.checked)"> Educación CC.SS</label>
+        <label class="chip"><input type="checkbox" onchange="App.toggleTag('Creatividad', this.checked)"> Creatividad</label>
       </div>
     </aside>`;
 
@@ -1058,4 +1082,5 @@ prevBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
 
