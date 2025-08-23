@@ -348,9 +348,9 @@
       </div>
     </div>
     <nav class="nav-links" aria-label="Principal">
-      <a href="ini.html#/" onclick="Router.go('/')">Inicio</a>
+      <a href="" onclick="Router.go('/')">Inicio</a>
       <a href="https://www.digitaliapublishing.com/" target="_blank" onclick="Router.go('/colecciones')">Biblioteca</a>
-      <a href="ini.html#/" onclick="Router.go('/estadisticas')">Estadísticas</a>
+      <a href="#/" onclick="Router.go('/estadisticas')">Estadísticas</a>
       <a href="https://wa.me/51974329311" target="_blank"  onclick="Router.go('/contacto')">Contáctenos</a>
     </nav>
   </div>
@@ -623,13 +623,13 @@ const tesisPerPage = 6; // 6 ítems = 3 filas si tu grid tiene 2 columnas en des
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Inicial', this.checked)"> Educación Inicial</label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación Primaria', this.checked)"> Educación Primaria</label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Educación CC.SS', this.checked)"> Educación CC.SS</label><br>
-        <br>
+        
         <h3>Año</h3>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('2022', this.checked)"> 2022</label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('2023', this.checked)"> 2023 </label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('2024', this.checked)"> 2024 </label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('2025', this.checked)"> 2025 </label><br>
-        <br>
+        
         <h3>Palabras Clave</h3>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Creatividad', this.checked)"> Creatividad</label>
         <label class="chip"><input type="checkbox" onchange="App.toggleTag('Desarrollo cognitivo', this.checked)"> Desarrollo cognitivo</label>
@@ -1111,6 +1111,7 @@ prevBtn.addEventListener("click", () => {
 
 </body>
 </html>
+
 
 
 
